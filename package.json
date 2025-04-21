@@ -1,0 +1,8 @@
+{
+  "name": "ideasmanagement",
+  "private": true,
+  "version": "0.0.0",
+  "devDependencies": {
+    "typescript": "5.8.3"
+  }
+}
