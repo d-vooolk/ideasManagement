@@ -1,14 +1,14 @@
-import { trpc } from '../../lib/trpc.tsx';
+import { trpc } from '../../lib/trpc.tsx'
 
 export const Index = () => {
-  const { data, error, isLoading, isFetching, isError } = trpc.getIdeas.useQuery();
+  const { data, error, isLoading, isFetching, isError } = trpc.getIdeas.useQuery()
 
   if (isLoading || isFetching) {
-    return <span>Loading ...</span>;
+    return <span>Loading ...</span>
   }
 
   if (isError) {
-    return <span>Error: {error.message}</span>;
+    return <span>Error: {error.message}</span>
   }
 
   return (
@@ -21,5 +21,5 @@ export const Index = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
